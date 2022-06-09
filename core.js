@@ -3,7 +3,7 @@ function calculateEnergyOutput(delta) {
 		return 0;
 	}
 
-	var multiplier = 1 + (Game.stargaze.entries.darkMatter.count * dmBoost);
+	var multiplier = 100 + (Game.stargaze.entries.darkMatter.count * dmBoost);
 
 	// Fixed outputs first
 	var output = (ring*ringOutput) + (swarm*swarmOutput) + (sphere*sphereOutput) + (solarPanel*solarPanelOutput);
